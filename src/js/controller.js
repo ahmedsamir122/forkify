@@ -116,6 +116,7 @@ const init = function(){
   recipeView._addHandlerUpdate(updatRecipe);
   recipeView._addHandlerBookMark(controlBookMark);
   addView._addHandlerloadValues(controlAddRecipe);
+  console.log('test');
 }
 init();
 
