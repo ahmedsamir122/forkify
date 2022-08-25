@@ -1,5 +1,6 @@
 import icons from '../../img/icons.svg';
 import { view } from './view';
+import fracty from 'fracty';
 class recipeView extends view {
   parentEl = document.querySelector('.recipe');
   _massage="the recipe you choosed can't be found";
@@ -87,7 +88,7 @@ class recipeView extends view {
       <svg class="recipe__icon">
         <use href="${icons}#icon-check"></use>
       </svg>
-      <div class="recipe__quantity">${ing.quantity?new Fraction(ing.quantity).toString():''}</div>
+      <div class="recipe__quantity">${ing.quantity?fracty(ing.quantity):''}</div>
       <div class="recipe__description">
         <span class="recipe__unit">${ing.unit}</span>
         ${ing.description}

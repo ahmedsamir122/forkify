@@ -4,7 +4,6 @@ import icons from 'url:../img/icons.svg';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import recipeView from './views/recipeView';
-import Fractional from "fractional";
 import * as model from './module';
 import { async } from 'regenerator-runtime';
 import searchView from './views/searchView';
